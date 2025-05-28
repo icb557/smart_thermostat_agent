@@ -48,11 +48,11 @@ class agenteMusica:
           return "No comprender"
 
 musicA = agenteMusica(reglasMusica)
-percepcion = input("Percepción -> ")
-while percepcion!="salir":
-  print(musicA.actuarAM(percepcion))
   percepcion = input("Percepción -> ")
-print("Good Bye")
+  while percepcion!="salir":
+    print(musicA.actuarAM(percepcion))
+    percepcion = input("Percepción -> ")
+  print("Good Bye")
 
 """---
 ***Agente Máquina Dispensadora --  Agente Reactivo Simple***
